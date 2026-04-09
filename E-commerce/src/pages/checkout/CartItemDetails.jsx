@@ -14,7 +14,7 @@ export function CartItemDetail({ cartItem, loadCart }) {
 
   return (
     <>
-    <><p>harshan</p></>
+    <><p>harshan suthar</p></>
       <img className="product-image" src={cartItem.product.image} />
 
       <div className="cart-item-details">
