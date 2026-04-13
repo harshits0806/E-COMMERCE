@@ -5,7 +5,7 @@ import { useEffect, useState, Fragment } from "react";
 import { Header } from "../../Components/Header";
 import { OrderGrid } from "./OrderGrid";
 
-export function OrderPage({ cart }) {
+export function OrderPage({ cart, loadCart}) {
   const [orders, setOrder] = useState([]);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function OrderPage({ cart }) {
       <link rel="icon" type="image/svg+xml" href="orders-favicon.png" />
       <div className="orders-page">
         <div className="page-title">Your Orders</div>
-        <OrderGrid orders={orders} />
+        <OrderGrid orders={orders} loadCart={loadCart}/>
       </div>
     </>
   );
