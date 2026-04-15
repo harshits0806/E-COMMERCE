@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 
 export function HomePage({ cart, loadCart }) {
   const [products, setProducts] = useState([]);
+  
 
   const [searchParams] = useSearchParams();
   const search = searchParams.get("search");
