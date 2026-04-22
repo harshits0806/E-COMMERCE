@@ -39,7 +39,7 @@ export function OrderDetailGrid({ order, loadCart }) {
                 onClick={addToCart}
               >
                 <img className="buy-again-icon" src={BuyAgainIcon} />
-                <span className="buy-again-message">Add to Cartt</span>
+                <span className="buy-again-message">Add to Cart</span>
               </button>
             </div>
 
